@@ -1,0 +1,740 @@
+@charset "UTF-8";
+/*Сброс*/
+*
+{
+    box-sizing : border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, samp, small,
+strike, strong, sub, sup, tt, var, b, i,
+dl, dt, dd, ol, ul, li, fieldset, form,
+label, legend, table, caption, tbody, tfoot,
+thead, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer,
+header, hgroup, nav, output, ruby, section,
+time, mark, audio, video
+{
+    margin          : 0;
+    padding         : 0;
+    border          : 0;
+    font-size       : 100%;
+    font            : inherit;
+    vertical-align  : baseline;
+    text-decoration : none;
+}
+
+a:active, a:focus
+{
+    outline : none;
+}
+
+input, textarea
+{
+    outline : none;
+}
+
+input:active, textarea:active
+{
+    outline : none;
+}
+
+:focus
+{
+    outline : none;
+}
+
+textarea
+{
+    resize : none;
+}
+
+textarea
+{
+    resize : vertical;
+}
+
+textarea
+{
+    resize : horizontal;
+}
+
+button, button:active, button:focus,
+input, input:active, input:focus
+{
+    outline : none;
+}
+
+ol, ul
+{
+    list-style : none;
+}
+
+/*Grid*/
+.container
+{
+    max-width : 1280px;
+}
+
+.nav
+{
+    position : relative;
+    width    : 100%;
+    height   : 152px;
+    display  : flex;
+    padding  : 35px 15px 41px 15px;
+}
+
+.nav .hidden-menu__filter
+{
+    display                     : block;
+    position                    : fixed;
+    list-style                  : none;
+    padding                     : 10px 15px;
+    margin                      : 0;
+    box-sizing                  : border-box;
+    width                       : 200px;
+    background-color            : #2d3748;
+    height                      : 100%;
+    top                         : 0;
+    left                        : -200px;
+    transition                  : right .3s;
+    z-index                     : 2;
+    -webkit-transform           : translateZ(0);
+    -webkit-backface-visibility : hidden;
+}
+
+.hidden-menu-filter
+{
+    display : none;
+}
+
+.btn-menu-filter
+{
+    color                       : #fff;
+    position                    : absolute;
+    margin-top                  : -14.5px;
+    top                         : 50%;
+    left                        : 15px;
+    cursor                      : pointer;
+    transition                  : left .23s;
+    z-index                     : 3;
+    width                       : 30px;
+    -webkit-transform           : translateZ(0);
+    -webkit-backface-visibility : hidden;
+}
+
+.btn-menu-filter span
+{
+    display       : block;
+    margin-bottom : 5px;
+    height        : 3px;
+    background    : #4a5568;
+}
+
+.hidden-menu__filter span
+{
+    height           : 5px;
+    padding          : 5px;
+    background-color : #fff;
+    margin           : 5px 0 0;
+    transition       : all .1s linear .23s;
+    position         : relative;
+}
+
+.btn-menu-filter span.first
+{
+    margin-top : 5px;
+}
+
+.hidden-menu-filter:checked ~ .btn-menu-filter
+{
+    top: 35px;
+    width : 20px;
+    left : 155px;
+}
+
+.hidden-menu-filter:checked ~ .hidden-menu__filter
+{
+    left : 0;
+}
+
+.hidden-menu-filter:checked ~ .btn-menu-filter span.first
+{
+    -webkit-transform : rotate(45deg);
+    margin-top : 0px;
+    height : 2px;
+    background: #ffffff;
+}
+
+.hidden-menu-filter:checked ~ .btn-menu-filter span.second
+{
+    opacity : 0;
+}
+
+.hidden-menu-filter:checked ~ .btn-menu-filter span.third
+{
+    -webkit-transform : rotate(-45deg);
+    margin-top : -15px;
+    height : 2px;
+    background: #ffffff;
+}
+.hidden-menu__filter li:nth-of-type(1) img {
+    zoom : 0.6;
+    margin-right : 10px;
+}
+.hidden-menu__filter li:nth-of-type(1) {
+    font-size : 20px;
+}
+.hidden-menu__filter li {
+    padding-bottom : 25px;
+}
+.tabfilter {
+    display: none;
+}
+.nav .nav_center
+{
+    display         : flex;
+    width           : 100%;
+    max-width       : 383px;
+    align-items     : center;
+    justify-content : space-between;
+}
+
+.nav li
+{
+    display     : flex;
+    align-items : center;
+    font-family : Rubik_Regular;
+    font-size   : 18px;
+    color       : #718096;
+}
+
+.nav li a,
+.nav .nav_center a
+{
+    display     : flex;
+    align-items : center;
+    color       : #718096;
+}
+
+.nav li a:hover
+{
+    transition : all 0.25s;
+    color      : #fbd38d;
+}
+
+.nav li a:hover svg path
+{
+    transition : all 0.25s;
+    fill       : #fbd38d;
+}
+
+.nav .logo
+{
+    display      : flex;
+    align-items  : center;
+    margin-right : 115px;
+    font-family  : Baloo;
+    font-size    : 43.6px;
+    color        : #4a5568;
+}
+
+.nav .logo img
+{
+    margin-right : 12px;
+}
+
+.nav .enter
+{
+    margin-left : auto;
+}
+
+.nav .enter svg
+{
+    margin-right : 11px;
+}
+
+.offer
+{
+    display           : flex;
+    flex-wrap         : wrap;
+    background        : url("../img/other/map.png");
+    background-repeat : no-repeat;
+    background-size   : cover;
+}
+
+.offer_btn
+{
+    width         : auto;
+    display       : inline-flex;
+    border-radius : 8px;
+    box-shadow    : 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.btn_orange
+{
+    width           : 186px;
+    padding         : 0;
+    height          : 58px;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    box-sizing      : border-box;
+    border          : 0;
+    border-radius   : 0px 8px 8px 0px;
+    font-family     : Rubik_Medium;
+    font-size       : 18px;
+    color           : #975a16;
+    background      : #fbd38d;
+}
+
+.btn_grey:hover
+{
+    transition : all 0.3s;
+    border     : 0.8px solid #dbdbdb;
+    color      : #90a3ac;
+    background : #d5e2eb;
+}
+
+.email
+{
+    width         : 325px;
+    padding-left  : 18px;
+    display       : flex;
+    align-items   : center;
+    box-sizing    : border-box;
+    border        : 0.842105px solid #e2e8f0;
+    border-radius : 8px 0 0 8px;
+    font-family   : Rubik_Regular;
+    font-size     : 18px;
+    color         : #647792;
+}
+
+.email::-webkit-input-placeholder
+{
+    font-family : Rubik_Regular;
+    font-size   : 18px;
+    color       : #a0aec0;
+}
+
+.email::-moz-placeholder
+{
+    font-family : Rubik_Regular;
+    font-size   : 18px;
+    color       : #a0aec0;
+}
+
+/* Firefox 19+ */
+.email:-moz-placeholder
+{
+    font-family : Rubik_Regular;
+    font-size   : 18px;
+    color       : #a0aec0;
+}
+
+/* Firefox 18- */
+.email:-ms-input-placeholder
+{
+    font-family : Rubik_Regular;
+    font-size   : 18px;
+    color       : #a0aec0;
+}
+
+.btn_orange:hover
+{
+    transition : all 0.3s;
+    background : #ffcc72;
+}
+
+.offer_title
+{
+    padding-top : 95px;
+    font-family : Rubik_light;
+    font-size   : 48px;
+    color       : #4a5568;
+}
+
+.offer_title span
+{
+    font-family : Rubik_Regular;
+}
+
+.offer_clarification
+{
+    max-width      : 515px;
+    padding-top    : 37px;
+    padding-bottom : 61px;
+    line-height    : 150%;
+    font-family    : Rubik_light;
+    font-size      : 24px;
+    color          : #718096;
+}
+
+.offer_clarification span
+{
+    font-family : Rubik_Regular;
+}
+
+.diagram
+{
+    padding-top : 165px;
+}
+
+.diagram_top
+{
+    position       : relative;
+    width          : 100%;
+    height         : 100px;
+    display        : flex;
+    padding-bottom : 10px;
+}
+
+.diagram-centre
+{
+    display     : flex;
+    align-items : center;
+}
+
+.line
+{
+    width      : 193px;
+    height     : 6px;
+    background : linear-gradient(90deg, #a0aec0 3.11%, #718096 100%);
+}
+
+.line_two
+{
+    background : #718096;
+}
+
+.line_three
+{
+    background : linear-gradient(90deg, #718096 3.11%, #a0aec0 100%);
+}
+
+.line_four
+{
+    background : linear-gradient(90deg, #a0aec0 3.11%, #cbd5e0 100%);
+}
+
+.diagram_txt
+{
+    position    : absolute;
+    font-family : Rubik_light;
+    font-size   : 20px;
+    color       : #a0aec0;
+}
+
+.diagram_txt p:nth-of-type(1) span
+{
+    padding-top : 8px;
+    font-family : Rubik_Regular;
+    font-size   : 12px;
+    color       : #cbd5e0;
+}
+
+.diagram_txt p:nth-of-type(2)
+{
+    padding-top : 10px;
+    font-family : Rubik_Regular;
+    font-size   : 12px;
+    line-height : 14px;
+    color       : #cbd5e0;
+}
+
+.diagram_txt span
+{
+    display : block;
+}
+
+.diagram_txt:nth-of-type(2) p:nth-of-type(1)
+{
+    color : #718096;
+}
+
+.diagram_txt:nth-of-type(2) p:nth-of-type(1) span
+{
+    color : #a0aec0;
+}
+
+.diagram_txt:nth-of-type(2) p:nth-of-type(2)
+{
+    font-family : Rubik_light;
+    color       : #a0aec0;
+}
+
+.diagram_txt:nth-of-type(3) p:nth-of-type(1)
+{
+    color : #cbd5e0;
+}
+
+.diagram_txt:nth-of-type(3) p:nth-of-type(1) span
+{
+    color : #e2e8f0;
+}
+
+.diagram_txt:nth-of-type(3) p:nth-of-type(2)
+{
+    font-family : Rubik_light;
+    color       : #edf2f7;
+}
+
+.diagram-bottom
+{
+    position    : relative;
+    height      : 100px;
+    padding-top : 30px;
+    display     : flex;
+}
+
+.diagram-bottom .diagram_txt:nth-of-type(1)
+{
+    padding-left : 16px;
+    border-left  : 7px solid #f6ad55;
+}
+
+.diagram-bottom .diagram_txt:nth-of-type(1) p:nth-of-type(1)
+{
+    font-family : Rubik_Regular;
+    font-size   : 30px;
+    color       : #4a5568;
+}
+
+.diagram-bottom .diagram_txt:nth-of-type(1) p:nth-of-type(1) span
+{
+    font-size : 14px;
+    color     : #718096;
+}
+
+.diagram-bottom .diagram_txt:nth-of-type(1) p:nth-of-type(2)
+{
+    font-family : Rubik_light;
+    font-size   : 16px;
+    line-height : 19px;
+    color       : #718096;
+}
+
+.diagram-bottom .diagram_txt:nth-of-type(2) p:nth-of-type(1)
+{
+    font-family : Rubik_light;
+    font-size   : 24px;
+    line-height : 28px;
+    color       : #a0aec0;
+}
+
+.diagram-bottom .diagram_txt:nth-of-type(2) p:nth-of-type(1) span
+{
+    font-family : Rubik_Regular;
+    font-size   : 12px;
+    line-height : 14px;
+    color       : #cbd5e0;
+}
+
+.diagram-bottom .diagram_txt:nth-of-type(2) p:nth-of-type(2)
+{
+    font-family : Rubik_light;
+    font-size   : 14px;
+    line-height : 17px;
+    color       : #cbd5e0;
+}
+
+.diagram-bottom .diagram_txt:nth-of-type(3)
+{
+    margin-left : auto;
+}
+
+.diagram-bottom .diagram_txt:nth-of-type(3) p:nth-of-type(1)
+{
+    font-family : Rubik_light;
+    font-size   : 18px;
+    text-align  : right;
+    line-height : 21px;
+    color       : #edf2f7;
+}
+
+.diagram-bottom .diagram_txt:nth-of-type(3) p:nth-of-type(1) span
+{
+    font-family : Rubik_Regular;
+    font-size   : 12px;
+    line-height : 14px;
+    color       : #edf2f7;
+}
+
+.illustration
+{
+    display         : flex;
+    justify-content : center;
+}
+
+.illustration img
+{
+    width     : 100%;
+    max-width : 461px;
+}
+
+.info_txt
+{
+    position       : relative;
+    padding-top    : 173px;
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+}
+
+.info_txt p
+{
+    width       : 100%;
+    max-width   : 729px;
+    font-family : Rubik_light;
+    font-size   : 18px;
+    line-height : 150%;
+    color       : #718096;
+}
+
+.info_txt p span
+{
+    font-family : Rubik_Medium;
+}
+
+.info_txt p:nth-of-type(3) span,
+.info_txt p:nth-of-type(5) span
+{
+    display : block;
+}
+
+.info_txt p:nth-of-type(2),
+.info_txt p:nth-of-type(3),
+.info_txt p:nth-of-type(4)
+{
+    padding-bottom : 55px;
+}
+
+.info_txt p:nth-of-type(1)
+{
+    padding-bottom : 64px;
+    font-family    : Rubik_Light;
+    font-size      : 36px;
+    text-align     : center;
+    color          : #718096;
+}
+
+.info_txt p:nth-of-type(1) span
+{
+    font-family : Rubik_Medium;
+}
+
+.info_txt img
+{
+    position : absolute;
+}
+
+.info_txt_image img:nth-of-type(1)
+{
+    position : absolute;
+    top      : 45vh;
+    left     : 0;
+}
+
+.info_txt_image img:nth-of-type(2)
+{
+    position : absolute;
+    top      : 80vh;
+    right    : 0;
+}
+
+.container_widh
+{
+    position : relative;
+}
+
+.info_txt_image
+{
+    width    : 100%;
+    position : absolute;
+    top      : 0;
+}
+
+.email_end
+{
+    padding-top    : 116px;
+    padding-bottom : 134px;
+    width          : 100%;
+    max-width      : 729px;
+    margin         : 0 auto;
+}
+
+.email_end p
+{
+    padding-bottom : 24px;
+    font-family    : Rubik_Regular;
+    font-size      : 20px;
+    color          : #718096;
+}
+
+.email_end .btn_orange
+{
+    background : #f6ad55;
+    color      : white;
+}
+
+.email_end .btn_orange:hover
+{
+    transition : all 0.3s;
+    background : #ef8e19;
+}
+
+.container_footer
+{
+    width      : 100%;
+    background : #2d3748;
+}
+
+.footer
+{
+    width : 100%;
+}
+
+.footer .nav
+{
+    width   : 100%;
+    padding : 50px 15px;
+}
+
+.footer .nav ul
+{
+    margin : 0 auto
+}
+
+.footer .logo
+{
+    margin-right : 0;
+    color        : white;
+}
+
+.footer .nav li a
+{
+    color : #cbd5e0;
+}
+
+.footer .nav li a svg path
+{
+    fill : #cbd5e0;
+}
+
+.footer .nav li a:hover,
+.footer .nav li a:hover path
+{
+    transition : all 0.3s;
+    color      : white;
+    fill       : white;
+}
+.col-wrap {
+    width : 100%;
+    display: flex;
+}
+.diagram_mob {
+    display: none;
+}

@@ -1,0 +1,568 @@
+/*==========  Desktop First Method  ==========*/
+/* Large desktops and laptops */
+@media only screen and (min-width : 1200px)
+{
+}
+
+/* Portrait tablets and medium desktops */
+@media only screen and (max-width : 1199px)
+{
+    .nav
+    {
+        height : 125px;
+    }
+
+    .nav .logo img
+    {
+        zoom : 0.9;
+    }
+
+    .nav .logo
+    {
+        margin-right : 70px;
+        font-size    : 41px;
+    }
+
+    .nav .nav_center
+    {
+        max-width : 320px;
+    }
+
+    .nav li
+    {
+        font-size : 16px;
+    }
+
+    .offer_title
+    {
+        padding-top : 85px;
+    }
+
+    .offer_title
+    {
+        font-size : 42px;
+    }
+
+    .offer_clarification
+    {
+        padding-top : 35px;
+        font-size   : 22px;
+    }
+
+    .illustration img
+    {
+        width : 75%;
+    }
+
+    .btn_orange
+    {
+        width  : 160px;
+        height : 50px;
+    }
+
+    .email
+    {
+        width : 310px;
+    }
+
+    .line
+    {
+        width : 100%;
+    }
+
+    .diagram_txt
+    {
+        font-size : 18px;
+    }
+
+    .diagram_txt p:nth-of-type(2)
+    {
+        font-size : 10px;
+    }
+
+    .diagram-bottom .diagram_txt:nth-of-type(1) p:nth-of-type(1)
+    {
+        font-size : 26px;
+    }
+
+    .diagram-bottom .diagram_txt:nth-of-type(1) p:nth-of-type(1) span
+    {
+        font-size : 12px;
+    }
+
+    .diagram-bottom .diagram_txt:nth-of-type(1) p:nth-of-type(2)
+    {
+        font-size : 14px;
+    }
+
+    .diagram_txt p:nth-of-type(1) span
+    {
+        font-size : 10px;
+    }
+
+    .diagram-bottom .diagram_txt:nth-of-type(2) p:nth-of-type(1)
+    {
+        font-size : 20px;
+    }
+
+    .diagram-bottom .diagram_txt:nth-of-type(2) p:nth-of-type(1) span
+    {
+        font-size : 10px;
+    }
+
+    .diagram-bottom .diagram_txt:nth-of-type(2) p:nth-of-type(2)
+    {
+        font-size : 12px;
+    }
+
+    .diagram-bottom .diagram_txt:nth-of-type(3) p:nth-of-type(1)
+    {
+        font-size : 16px;
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media only screen and (max-width : 991px)
+{
+    .nav .logo img
+    {
+        zoom : 0.8;
+    }
+
+    .nav .logo
+    {
+        margin-right : 60px;
+        font-size    : 38px;
+    }
+
+    .nav ul
+    {
+        max-width : 300px;
+    }
+
+    .nav li
+    {
+        font-size : 14px;
+    }
+
+    .diagram_txt
+    {
+        font-size : 16px;
+    }
+
+    .diagram_txt p:nth-of-type(2)
+    {
+        font-size : 8px;
+    }
+
+    .diagram-bottom .diagram_txt:nth-of-type(1) p:nth-of-type(1)
+    {
+        font-size : 22px;
+    }
+
+    .diagram-bottom .diagram_txt:nth-of-type(1) p:nth-of-type(1) span
+    {
+        font-size : 10px;
+    }
+
+    .diagram-bottom .diagram_txt:nth-of-type(1) p:nth-of-type(2)
+    {
+        font-size : 12px;
+    }
+
+    .diagram_txt p:nth-of-type(1) span
+    {
+        font-size : 8px;
+    }
+
+    .diagram-bottom .diagram_txt:nth-of-type(2) p:nth-of-type(1)
+    {
+        font-size : 18px;
+    }
+
+    .diagram-bottom .diagram_txt:nth-of-type(2) p:nth-of-type(1) span
+    {
+        font-size : 8px;
+    }
+
+    .diagram-bottom .diagram_txt:nth-of-type(2) p:nth-of-type(2)
+    {
+        font-size : 10px;
+    }
+
+    .diagram_txt p:nth-of-type(1) span
+    {
+        padding-top : 4px;
+    }
+
+    .diagram_txt p:nth-of-type(2)
+    {
+        padding-top : 6px;
+        line-height : 12px;
+    }
+
+    .diagram-bottom .diagram_txt:nth-of-type(3) p:nth-of-type(1)
+    {
+        font-size : 14px;
+    }
+
+    .offer_title
+    {
+        padding-top : 40px;
+        font-size   : 35px;
+    }
+
+    .offer_clarification
+    {
+        max-width : 345px;
+        font-size : 19px;
+    }
+
+    .illustration img
+    {
+        padding-top : 10px;
+        width       : 100%;
+    }
+
+    .email
+    {
+        padding-left : 10px;
+        width        : 200px;
+    }
+
+    .email::-webkit-input-placeholder
+    {
+        font-size : 13px;
+    }
+
+    .email::-moz-placeholder
+    {
+        font-size : 13px;
+    }
+
+    /* Firefox 19+ */
+    .email:-moz-placeholder
+    {
+        font-size : 13px;
+    }
+
+    /* Firefox 18- */
+    .email:-ms-input-placeholder
+    {
+        font-size : 13px;
+    }
+
+    .btn_orange
+    {
+        width     : 110px;
+        height    : 45px;
+        font-size : 13px;
+    }
+
+    .diagram
+    {
+        padding-top : 80px;
+    }
+
+    .info_txt
+    {
+        padding : 100px 15px 0 15px;
+    }
+
+    .info_txt p:nth-of-type(1)
+    {
+        padding-bottom : 35px;
+        font-size      : 30px;
+    }
+
+    .info_txt p:nth-of-type(2), .info_txt p:nth-of-type(3), .info_txt p:nth-of-type(4)
+    {
+        padding-bottom : 25px;
+    }
+
+    .info_txt p
+    {
+        font-size : 15px;
+    }
+
+    .email_end
+    {
+        padding    : 80px;
+        text-align : center;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media only screen and (max-width : 767px)
+{
+    .nav
+    {
+        height  : 90px;
+        padding : 20px 15px;
+    }
+
+    .nav .nav_center, .nav .enter span
+    {
+        display : none;
+    }
+
+    .tabfilter
+    {
+        display : block;
+    }
+
+    .nav .enter svg
+    {
+        margin : 0;
+    }
+
+    .nav .logo
+    {
+        margin : 0 auto;
+    }
+
+    .nav .enter
+    {
+        margin : 0;
+    }
+
+    .offer_title
+    {
+        padding-bottom : 25px;
+        font-size      : 30px;
+        text-align     : center;
+    }
+
+    .offer_clarification
+    {
+        max-width : 90%;
+        margin    : 0 auto;
+        padding   : 30px;
+        font-size : 16px;
+    }
+
+    .offer_btn
+    {
+        margin : 0 auto;
+    }
+
+    .mob-btn
+    {
+        display         : flex;
+        flex-direction  : column;
+        justify-content : center;
+    }
+
+    .col-wrap
+    {
+        display        : flex;
+        flex-direction : column-reverse;
+    }
+
+    .btn_orange
+    {
+        width : 175px;
+    }
+
+    .email
+    {
+        width     : 100%;
+        max-width : 300px;
+        font-size : 14px;
+    }
+
+    .info_txt p:nth-of-type(1)
+    {
+        font-size : 25px;
+    }
+
+    .info_txt p:nth-of-type(2), .info_txt p:nth-of-type(3), .info_txt p:nth-of-type(4)
+    {
+        padding-bottom : 10px;
+    }
+
+    .info_txt p
+    {
+        font-size : 12px;
+    }
+
+    .footer .nav ul,
+    .footer .nav .nav_center
+    {
+        display : flex;
+        width   : 100%;
+        padding : 0 30px;
+    }
+
+    .footer .nav ul li,
+    .footer .nav .nav_center li
+    {
+        font-size : 12px;
+    }
+
+    .footer .nav
+    {
+        padding : 0 15px;
+        height  : 100px;
+    }
+
+    .footer .nav .logo
+    {
+        font-size : 30px;
+        margin    : 0;
+    }
+
+    .diagram
+    {
+        display : none;
+    }
+
+    .diagram_mob
+    {
+        display     : flex;
+        padding-top : 30px;
+    }
+
+    .diagram-centre-mob
+    {
+        display        : flex;
+        flex-direction : column;
+        align-items    : center;
+    }
+
+    .diagram_mob .diagram_top_mob,
+    .diagram_mob .diagram-bottom-mob
+    {
+        width : 100%;
+    }
+
+    .diagram_mob .diagram-centre-mob
+    {
+        min-width : 70px;
+    }
+
+    /*.diagram-centre-mob img {
+         zoom: 0.7;
+     }*/
+    .diagram-centre-mob .line
+    {
+        width  : 4px;
+        height : 30px;
+    }
+
+    .diagram_top_mob,
+    .diagram-bottom-mob
+    {
+        position : relative;
+    }
+
+    .diagram_top_mob .diagram_txt,
+    .diagram-bottom-mob .diagram_txt
+    {
+        position   : relative;
+        text-align : right;
+    }
+    .diagram-bottom-mob .diagram_txt {
+        text-align: left;
+    }
+    #d_third_mob
+    {
+        padding-top : 75px;
+    }
+
+    #d_five_mob
+    {
+        padding-top : 65px;
+    }
+    #d_second_mob {
+        padding-top : 60px;
+    }
+    #d_four_mob {
+        padding-top : 70px;
+    }
+    #d_six_mob {
+        padding-top : 60px;
+    }
+    .info_txt {
+        padding-top : 50px;
+    }
+    .footer .nav li a {
+        font-size : 12px;
+    }
+}
+
+/* Landscape phones and smaller */
+@media only screen and (max-width : 480px)
+{
+    .footer .nav .logo span
+    {
+        display : none;
+    }
+    .nav .logo {
+        font-size : 30px;
+    }
+    .nav .logo img {
+        zoom: 0.6;
+    }
+    .offer_title {
+        padding : 20px 0;
+        font-size : 25px;
+    }
+    .offer_clarification {
+        padding : 20px 0;
+        margin : 0 auto;
+        font-size : 12px;
+    }
+    .email {
+        font-size : 10px;
+    }
+    .email::-webkit-input-placeholder
+    {
+        font-size   : 10px;
+    }
+
+    .email::-moz-placeholder
+    {
+        font-size   : 10px;
+    }
+
+    /* Firefox 19+ */
+    .email:-moz-placeholder
+    {
+        font-size   : 10px;
+    }
+
+    /* Firefox 18- */
+    .email:-ms-input-placeholder
+    {
+        font-size   : 10px;
+    }
+    .btn_orange {
+        width : 130px;
+        height : 40px;
+        font-size : 10px;
+    }
+    .info_txt p:nth-of-type(1) {
+        font-size : 20px;
+        padding-bottom : 20px;
+    }
+    .info_txt p {
+        font-size : 10px;
+    }
+    .email_end {
+        padding : 40px 0;
+    }
+    .email_end p {
+        font-size : 15px;
+    }
+    .info_txt_image img:nth-of-type(1),
+    .info_txt_image img:nth-of-type(2) {
+        zoom : 0.5;
+    }
+    .footer .nav .nav_center {
+        display: none;
+    }
+    .footer .nav .enter {
+        margin-left : auto;
+    }
+}
