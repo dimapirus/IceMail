@@ -738,3 +738,6 @@ ol, ul
 .diagram_mob {
     display: none;
 }
+.footer .nav .nav_center {
+    margin : 0 auto;
+}
