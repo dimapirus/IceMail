@@ -741,3 +741,6 @@ ol, ul
 .footer .nav .nav_center {
     margin : 0 auto;
 }
+.nav .tabfilter {
+    display: none;
+}

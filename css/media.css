@@ -147,12 +147,12 @@
 
     .diagram_txt
     {
-        font-size : 16px;
+        font-size : 20px;
     }
 
     .diagram_txt p:nth-of-type(2)
     {
-        font-size : 8px;
+        font-size : 12px;
     }
 
     .diagram-bottom .diagram_txt:nth-of-type(1) p:nth-of-type(1)
@@ -172,7 +172,7 @@
 
     .diagram_txt p:nth-of-type(1) span
     {
-        font-size : 8px;
+        font-size : 12px;
     }
 
     .diagram-bottom .diagram_txt:nth-of-type(2) p:nth-of-type(1)
@@ -292,6 +292,13 @@
     }
 }
 
+@media only screen and (max-width : 991px) {
+    .info_txt_image img:nth-of-type(1),
+    .info_txt_image img:nth-of-type(2) {
+        display: none;
+    }
+}
+
 /* Landscape phones and portrait tablets */
 @media only screen and (max-width : 767px)
 {
@@ -338,7 +345,7 @@
         max-width : 90%;
         margin    : 0 auto;
         padding   : 30px;
-        font-size : 16px;
+        font-size : 20px;
     }
 
     .offer_btn
@@ -373,17 +380,17 @@
 
     .info_txt p:nth-of-type(1)
     {
-        font-size : 25px;
+        font-size : 30px;
     }
 
     .info_txt p:nth-of-type(2), .info_txt p:nth-of-type(3), .info_txt p:nth-of-type(4)
     {
-        padding-bottom : 10px;
+        padding-bottom : 20px;
     }
 
     .info_txt p
     {
-        font-size : 12px;
+        font-size : 16px;
     }
 
     .footer .nav ul,
@@ -447,7 +454,7 @@
     .diagram-centre-mob .line
     {
         width  : 4px;
-        height : 30px;
+        height : 50px;
     }
 
     .diagram_top_mob,
@@ -467,27 +474,30 @@
     }
     #d_third_mob
     {
-        padding-top : 75px;
+        padding-top : 100px;
     }
 
     #d_five_mob
     {
-        padding-top : 65px;
+        padding-top : 90px;
     }
     #d_second_mob {
-        padding-top : 60px;
+        padding-top : 75px;
     }
     #d_four_mob {
-        padding-top : 70px;
+        padding-top : 100px;
     }
     #d_six_mob {
-        padding-top : 60px;
+        padding-top : 100px;
     }
     .info_txt {
         padding-top : 50px;
     }
     .footer .nav li a {
         font-size : 12px;
+    }
+    .nav .tabfilter {
+        display: block;
     }
 }
 
@@ -511,7 +521,7 @@
     .offer_clarification {
         padding : 20px 0;
         margin : 0 auto;
-        font-size : 12px;
+        font-size : 18px;
     }
     .email {
         font-size : 10px;
@@ -543,17 +553,14 @@
         font-size : 10px;
     }
     .info_txt p:nth-of-type(1) {
-        font-size : 20px;
+        font-size : 25px;
         padding-bottom : 20px;
-    }
-    .info_txt p {
-        font-size : 10px;
     }
     .email_end {
         padding : 40px 0;
     }
     .email_end p {
-        font-size : 15px;
+        font-size : 17px;
     }
     .info_txt_image img:nth-of-type(1),
     .info_txt_image img:nth-of-type(2) {
@@ -564,5 +571,18 @@
     }
     .footer .nav .enter {
         margin-left : auto;
+    }
+    .diagram_txt p:nth-of-type(2) {
+        font-size : 11px;
+    }
+}
+@media only screen and (max-width : 360px) {
+    .diagram_txt p:nth-of-type(2) {
+        font-size : 10px;
+    }
+}
+@media only screen and (max-width : 335px) {
+    .diagram_txt p:nth-of-type(2) {
+        font-size : 9px;
     }
 }
